@@ -15,7 +15,8 @@ frm.addEventListener("submit", function(event){
     const formData = {
         product: event.target.product.value,
         price: event.target.price.value,
-        qty: event.target.qty.value
+        qty: event.target.qty.value,
+    
     }
 
     // products.push(formData)
@@ -32,8 +33,13 @@ frm.addEventListener("submit", function(event){
                    ${formData.qty}
                 </td>
                 <td>
+                    ${Number(formData.price) * Number(formData.qty)}
+                </td>
+                <td>
                     <button  class="btn-remove btn btn-sm btn-danger">X</button>
                 </td>
+                
+
             </tr>
         `
 
@@ -47,6 +53,8 @@ frm.addEventListener("submit", function(event){
     })
 
 })
+
+
 
 
 // /**
