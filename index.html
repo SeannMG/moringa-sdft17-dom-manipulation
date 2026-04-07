@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-warning">
+
+    <form id="frm">
+        <input name="product" type="text" placeholder="Product name"/>
+        <input name="price" type="text" placeholder="price"/>
+        <input name="qty" type="number" placeholder="qty"/>
+        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+    </form>
+
+    <table class="table">
+
+        <thead>
+            <th>Product</th>
+            <th>price</th>
+            <th>QTY</th>
+            <th>Total</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="rows">
+            
+        </tbody>
+
+    </table>
+    
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
